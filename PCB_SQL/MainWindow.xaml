@@ -1,0 +1,20 @@
+﻿<Window x:Class="PCB_SQL.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PCB_SQL"
+        mc:Ignorable="d"
+        Title="PCB-SQL Arayüzü" Height="250" Width="520">
+    <Grid>
+
+        <Button Content="Oluştur" HorizontalAlignment="Left" Margin="397,173,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.855,0.493" Click="Create_Click"/>
+        <TextBox Name="PCB_description" HorizontalAlignment="Left" Margin="160,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" MaxLength="256" Height="120"/>
+        <TextBlock HorizontalAlignment="Left" Margin="159,29,0,0" TextWrapping="Wrap" Text="PCB Açıklaması:" VerticalAlignment="Top"/>
+        <Button Content="Sorgula" HorizontalAlignment="Left" Margin="96,71,0,0" VerticalAlignment="Top" Click="Search_Click"/>
+        <TextBox Name="PCB_code" HorizontalAlignment="Left" Margin="20,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" MaxLength="4" TextChanged="PCB_code_TextChanged"/>
+        <TextBlock HorizontalAlignment="Left" Margin="21,29,0,0" TextWrapping="Wrap" Text="PCB Kodu:" VerticalAlignment="Top"/>
+        <Button Content="Kaydet" HorizontalAlignment="Left" Margin="445,173,0,0" VerticalAlignment="Top" Click="Save_Click"/>
+
+    </Grid>
+</Window>
