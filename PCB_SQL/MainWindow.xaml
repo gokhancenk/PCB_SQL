@@ -5,16 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:PCB_SQL"
         mc:Ignorable="d"
-        Title="PCB-SQL Arayüzü" Height="250" Width="520">
+        Title="PCB-SQL Arayüzü" Height="210" Width="480">
     <Grid>
 
-        <Button Content="Oluştur" HorizontalAlignment="Left" Margin="397,173,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.855,0.493" Click="Create_Click"/>
-        <TextBox Name="PCB_description" HorizontalAlignment="Left" Margin="160,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="325" MaxLength="256" Height="120"/>
-        <TextBlock HorizontalAlignment="Left" Margin="159,29,0,0" TextWrapping="Wrap" Text="PCB Açıklaması:" VerticalAlignment="Top"/>
-        <Button Content="Sorgula" HorizontalAlignment="Left" Margin="96,71,0,0" VerticalAlignment="Top" Click="Search_Click"/>
-        <TextBox Name="PCB_code" HorizontalAlignment="Left" Margin="20,48,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" MaxLength="4" TextChanged="PCB_code_TextChanged"/>
-        <TextBlock HorizontalAlignment="Left" Margin="21,29,0,0" TextWrapping="Wrap" Text="PCB Kodu:" VerticalAlignment="Top"/>
-        <Button Content="Kaydet" HorizontalAlignment="Left" Margin="445,173,0,0" VerticalAlignment="Top" Click="Save_Click"/>
+        <Button Content="Oluştur" HorizontalAlignment="Left" Margin="23,94,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.855,0.493" Click="Create_Click" Height="25" Width="65"/>
+        <TextBox Name="PCB_description" HorizontalAlignment="Left" Margin="102,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" MaxLength="256" Height="115"/>
+        <TextBlock HorizontalAlignment="Left" Margin="102,9,0,0" TextWrapping="Wrap" Text="PCB Açıklaması:" VerticalAlignment="Top" Height="20"/>
+        <Button Content="Sorgula" HorizontalAlignment="Left" Margin="23,64,0,0" VerticalAlignment="Top" Click="Search_Click" Height="25" Width="66"/>
+        <TextBox Name="PCB_code" HorizontalAlignment="Left" Margin="23,34,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" MaxLength="4" HorizontalContentAlignment="Center" TextChanged="PCB_code_TextChanged" Height="20"/>
+        <TextBlock x:Name="con" HorizontalAlignment="Left" Margin="23,9,0,0" TextWrapping="Wrap" Text="PCB Kodu:" VerticalAlignment="Top" Height="20" Width="66"/>
+        <Button Content="Kaydet" HorizontalAlignment="Left" Margin="23,124,0,0" VerticalAlignment="Top" Click="Save_Click" Height="25" Width="65"/>
 
     </Grid>
 </Window>
