@@ -129,6 +129,16 @@ namespace PCB_SQL
         {
             PCB_code.Text = PCB_code.Text.ToUpper().Replace("İ", "I");
             PCB_code.SelectionStart = PCB_code.Text.Length;
+
+        }
+
+        //when pressed the enter after writing the pcb code, searching will start
+        private void PCB_code_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.Key == Key.Enter)
+            {
+                Search_Click(sender, e);
+            }
         }
     }
 }
